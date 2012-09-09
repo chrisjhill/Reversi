@@ -23,11 +23,11 @@ $reversi = new Reversi($gridSize);
     <title>Reversi board game in PHP and Javascript</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     
-    <link rel="stylesheet" type="text/css" href="./reversi.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/reversi.css" media="screen" />
     
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script type="text/javascript" src="./reversi.js"></script>
-    <script type="text/javascript" src="./str_split.js"></script>
+    <script type="text/javascript" src="./assets/js/reversi.js"></script>
+    <script type="text/javascript" src="./assets/js/str_split.js"></script>
     <script type="text/javascript">
     // Set variables
     var gridSize           = <?php echo $gridSize; ?>,

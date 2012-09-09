@@ -360,9 +360,9 @@ class Reversi
             for ($x = 0; $x < $this->_gridSize; $x++) {
                 // Which disk do we need to place?
                 switch ($this->_boardContent[$y][$x]) {
-                    case 'b' : $output .= '<td><img src="disk-b.png" alt="B" class="disk-black" rel="'.$x.':'.$y.'" /></td>'; break;
-                    case 'w' : $output .= '<td><img src="disk-w.png" alt="W" class="disk-white" rel="'.$x.':'.$y.'" /></td>'; break;
-                    default  : $output .= '<td><a href="?x=' . $x . '&y=' . $y . '&turn=' . $this->_turnInPlay . '&board=' . $this->_boardContentAfterTurn . '" class="disk-empty" rel="'.$x.':'.$y.'"><img src="disk-e.png" alt="" /></a></td>';
+                    case 'b' : $output .= '<td><img src="./assets/img/disk-b.png" alt="B" class="disk-black" rel="'.$x.':'.$y.'" /></td>'; break;
+                    case 'w' : $output .= '<td><img src="./assets/img/disk-w.png" alt="W" class="disk-white" rel="'.$x.':'.$y.'" /></td>'; break;
+                    default  : $output .= '<td><a href="?x=' . $x . '&y=' . $y . '&turn=' . $this->_turnInPlay . '&board=' . $this->_boardContentAfterTurn . '" class="disk-empty" rel="'.$x.':'.$y.'"><img src="./assets/img/disk-e.png" alt="" /></a></td>';
                 }
             }
             

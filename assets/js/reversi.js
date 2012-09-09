@@ -67,7 +67,7 @@ function doTraverse(xDiff, yDiff) {
                 boardContent[yTemp][xTemp] = turnInPlay;
                 
                 // Change the image
-                $("img[rel='"+xTemp+":"+yTemp+"']").attr("src", "./disk-"+turnInPlay+".png");
+                $("img[rel='"+xTemp+":"+yTemp+"']").attr("src", "./assets/img/disk-"+turnInPlay+".png");
                 
                 // Set which disk we just updated
                 disksChanged[disksChanged.length] = [xTemp, yTemp];
@@ -94,7 +94,7 @@ function resetDisks() {
     // Loop over changed disks
     for (var i = 0; i < disksChangedLength; i++) {
         // Reset disk image
-        $("img[rel='"+disksChanged[i][0]+":"+disksChanged[i][1]+"']").attr("src", "./disk-"+turnNext+".png");
+        $("img[rel='"+disksChanged[i][0]+":"+disksChanged[i][1]+"']").attr("src", "./assets/img/disk-"+turnNext+".png");
         
         // Reset the board
         boardContent[disksChanged[i][1]][disksChanged[i][0]] = turnNext;
@@ -109,7 +109,7 @@ $(document).ready(function() {
     // Wait for the player to mouseover an empty disc
     $(".disk-empty").mouseenter(function() {
         // Set the disk colour
-        $("img", this).attr("src", "./disk-"+turnInPlay+".png");
+        $("img", this).attr("src", "./assets/img/disk-"+turnInPlay+".png");
         
         // Set the X and Y coords
         coords = $(this).attr("rel");
@@ -121,7 +121,7 @@ $(document).ready(function() {
         doTurn();
     }).mouseleave(function() {
         // Reset the disk that the user hovered over
-        $("img", this).attr("src", "./disk-e.png");
+        $("img", this).attr("src", "./assets/img/disk-e.png");
         
         // Reset the disks we changed
         resetDisks();
