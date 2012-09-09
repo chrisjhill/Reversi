@@ -1,5 +1,5 @@
 <?php
-class Reversi
+class Core_Reversi
 {
     /**
      * How big is our grid? Minimum of 9, maximum of 19.

@@ -5,13 +5,13 @@ error_reporting(E_ALL);
 ini_set('display_errors', 'On');
 
 // Include the Reversi class
-include 'Reversi.class.php';
+include 'libs/Core/Reversi.class.php';
 
 // How big (wide and tall) should the playing board be?
 $gridSize = 8;
 
 // Create the game!
-$reversi = new Reversi($gridSize);
+$reversi = new Core_Reversi($gridSize);
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
