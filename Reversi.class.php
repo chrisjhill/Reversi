@@ -314,7 +314,7 @@ class Reversi
      */
     private function getIsValidMove() {
         // If the user made a move and the disks flipped were none
-        return $this->_x && $this->_disksFlipped <= 0
+        return isset($this->_x) && $this->_disksFlipped <= 0
             ? false
             : true;
     }
